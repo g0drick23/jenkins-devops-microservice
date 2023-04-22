@@ -3,7 +3,8 @@
 
 pipeline {
 	//agent any
-	agent { docker { image 'maven' } }
+	//agent { docker { image 'maven' } }
+	agent { docker { image 'node' } }
 	stages{
 		stage("Build"){
 				steps{
