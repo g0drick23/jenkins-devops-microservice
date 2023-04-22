@@ -5,13 +5,13 @@ pipeline {
 	agent any
 	//agent { docker { image 'maven' } }
 	//agent { 
-	//	docker { image 'node:19.9' } 
+	//	docker { image 'node' } 
 	//}
 	stages{
 		stage("Build"){
 				steps{
 					//sh 'mvn --version'
-					sh 'node --version'
+					//sh 'node --version'
 					echo "Build"
 				}			
 			}
