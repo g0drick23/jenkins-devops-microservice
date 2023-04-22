@@ -4,9 +4,9 @@
 pipeline {
 	agent any
 	//agent { docker { image 'maven' } }
-	//agent { 
-	//	docker { image 'node' } 
-	//}
+	agent { 
+		docker { image 'node:latest' } 
+	}
 	stages{
 		stage("Build"){
 				steps{
