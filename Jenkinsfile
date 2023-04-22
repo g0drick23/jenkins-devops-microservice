@@ -2,7 +2,7 @@
 //DECLARATIVE
 
 pipeline {
-	agent any
+	//agent any
 	//agent { docker { image 'maven' } }
 	agent { 
 		docker { image 'node:latest' } 
